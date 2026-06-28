@@ -4,10 +4,10 @@
    ============================================================ */
 
 :root{
-  --pa:#2F6F8F;  /* (i)   teal   — high-fidelity        */
-  --pb:#3E8E7E;  /* (ii)  green  — differentiable       */
-  --pc:#C46A1F;  /* (iii) orange — Real2Sim / twins      */
-  --pd:#6A4C93;  /* (iv)  purple — world model           */
+  --pa:#6667AB;  /* Very Peri    17-3938 — pillar i      */
+  --pb:#BFA1C9;  /* Orchid Bloom 14-3612 — pillar ii     */
+  --pc:#B7DCE4;  /* Spun Sugar   12-4401 — pillar iii    */
+  --pd:#9DB8D6;  /* Clear Sky    14-4123 — pillar iv      */
 
   --ink:#14171A;
   --ink-2:#3c4248;
@@ -96,8 +96,8 @@ section{scroll-margin-top:74px}
 
 /* ── hero ──────────────────────────────────────────── */
 .hero{background:
-   radial-gradient(120% 90% at 85% -10%, rgba(106,76,147,.28), transparent 55%),
-   radial-gradient(90% 80% at 0% 0%, rgba(47,111,143,.30), transparent 50%),
+   radial-gradient(120% 90% at 85% -10%, rgba(102,103,171,.34), transparent 55%),
+   radial-gradient(90% 80% at 0% 0%, rgba(157,184,214,.26), transparent 50%),
    linear-gradient(180deg, var(--dark), var(--dark-2));
   color:#fff;padding:clamp(3.2rem,7vw,5.5rem) 0 clamp(2.6rem,5vw,4rem)}
 .hero__title{font-size:clamp(2.7rem,7vw,5rem);font-weight:700;letter-spacing:-0.025em;margin:.2rem 0 0}
@@ -139,37 +139,42 @@ section{scroll-margin-top:74px}
 /* pillar cards */
 .pillars{margin-top:2.2rem}
 .pillar{padding:1.5rem 1.4rem 1.6rem;border-top:4px solid var(--accent)}
-.pillar__no{font-family:var(--f-disp);font-weight:700;font-size:1.1rem;color:var(--accent);
-  text-transform:lowercase}
+.pillar__no{font-family:var(--f-disp);font-weight:700;font-size:1.1rem;
+  color:color-mix(in srgb, var(--accent) 60%, #1b1e22);text-transform:lowercase}
 .pillar .chip{margin:.5rem 0 .9rem}
 .pillar h3{font-size:1.18rem;margin-bottom:.5rem}
 .pillar p{margin:0;color:var(--ink-2);font-size:.94rem}
 
-.chip{display:inline-block;font-family:var(--f-mono);font-size:.72rem;color:var(--accent);
-  border:1px solid color-mix(in srgb, var(--accent) 40%, var(--line));
-  background:color-mix(in srgb, var(--accent) 7%, #fff);
+.chip{display:inline-block;font-family:var(--f-mono);font-size:.72rem;
+  color:color-mix(in srgb, var(--accent) 52%, #181a1e);
+  border:1px solid color-mix(in srgb, var(--accent) 58%, var(--line));
+  background:color-mix(in srgb, var(--accent) 18%, #fff);
   padding:.18rem .5rem;border-radius:7px;line-height:1.3}
 .chip sub{font-size:.7em}
 
 /* speaker cards */
 .speakers{margin-top:2.2rem}
-.person{display:flex;flex-direction:column}
+.person{display:flex;flex-direction:column;border-color:#e9ecef;
+  box-shadow:0 1px 2px rgba(20,23,26,.04), 0 16px 32px -20px rgba(20,23,26,.18)}
 .person__img{width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--mist)}
 .person__body{padding:1.1rem 1.2rem 1.4rem;display:flex;flex-direction:column;gap:.45rem}
 .tag{display:inline-block;align-self:flex-start;font-family:var(--f-mono);font-size:.66rem;
   text-transform:uppercase;letter-spacing:.08em;padding:.2rem .55rem;border-radius:6px;
-  color:#fff;background:var(--accent)}
+  color:#fff;background:var(--ink)}
 .person__name{font-size:1.22rem;margin-top:.1rem}
 .person__role{margin:0;font-weight:600;color:var(--ink);font-size:.9rem}
 .person__tags{margin:0;font-family:var(--f-mono);font-size:.72rem;color:var(--ink-3)}
 .person__bio{margin:.25rem 0 0;color:var(--ink-2);font-size:.9rem;line-height:1.55}
 
-/* organizer cards */
-.orgs{margin-top:1.6rem}
-.org{padding:1.1rem;text-align:left;border-top:3px solid var(--accent)}
-.org__img{width:64px;height:64px;border-radius:50%;object-fit:cover;background:var(--mist);margin-bottom:.7rem}
-.org h3{font-size:1rem;margin-bottom:.15rem}
-.org p{margin:0;color:var(--ink-3);font-size:.82rem}
+/* organizer cards — reference style: centered, soft shadow, no color */
+.orgs{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-top:1.6rem}
+.org{flex:0 1 220px;max-width:244px;padding:1.7rem 1.2rem;text-align:center;
+  border:1px solid #ebeef0;border-radius:16px;
+  box-shadow:0 1px 2px rgba(20,23,26,.05), 0 18px 36px -22px rgba(20,23,26,.20)}
+.org__img{width:92px;height:92px;border-radius:50%;object-fit:cover;background:var(--mist);
+  margin:0 auto .9rem}
+.org h3{font-size:1rem;margin-bottom:.25rem}
+.org p{margin:0;color:var(--ink-3);font-size:.84rem;line-height:1.4}
 .corr{display:inline-block;font-family:var(--f-mono);font-size:.58rem;text-transform:uppercase;
   letter-spacing:.06em;color:var(--pc);border:1px solid color-mix(in srgb,var(--pc) 45%,#fff);
   border-radius:5px;padding:.05rem .35rem;vertical-align:middle;margin-left:.3rem}
@@ -197,18 +202,15 @@ section{scroll-margin-top:74px}
   font-size:.72rem;color:var(--ink-3);margin:2rem 0 1rem;font-weight:400}
 .logos__head:first-of-type{margin-top:2rem}
 .logos{display:flex;flex-wrap:wrap;align-items:center;gap:clamp(1.4rem,4vw,2.8rem)}
-.logos img{height:46px;width:auto;object-fit:contain;filter:grayscale(1);opacity:.62;
-  transition:filter .2s, opacity .2s}
-.logos img:hover{filter:none;opacity:1}
-.logos--sponsor img{height:38px}
+.logos img{height:46px;width:auto;object-fit:contain;opacity:1}
+.logos--sponsor img{height:40px}
 
 /* ── image fallbacks ───────────────────────────────── */
 .ph-fallback{display:flex;align-items:center;justify-content:center;font-family:var(--f-disp);
   font-weight:600;color:#fff;letter-spacing:.02em}
 .ph-fallback.avatar{aspect-ratio:1/1;width:100%;
-  background:linear-gradient(135deg, var(--accent,#5a6470), color-mix(in srgb,var(--accent,#5a6470) 60%, #20242a));
-  font-size:1.6rem}
-.org .ph-fallback.avatar{width:64px;height:64px;border-radius:50%;font-size:1.1rem;margin-bottom:.7rem}
+  background:linear-gradient(135deg,#5b6470,#2a2f36);font-size:1.6rem}
+.org .ph-fallback.avatar{width:92px;height:92px;border-radius:50%;font-size:1.3rem;margin:0 auto .9rem}
 .ph-fallback.logo{height:46px;min-width:96px;padding:0 1rem;border:1px dashed var(--line);
   border-radius:8px;color:var(--ink-3);background:#fff;font-family:var(--f-mono);font-weight:400;
   font-size:.82rem;letter-spacing:.02em}
