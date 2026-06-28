@@ -166,15 +166,8 @@ section{scroll-margin-top:74px}
 .person__tags{margin:0;font-family:var(--f-mono);font-size:.72rem;color:var(--ink-3)}
 .person__bio{margin:.25rem 0 0;color:var(--ink-2);font-size:.9rem;line-height:1.55}
 
-/* organizer cards — reference style: centered, soft shadow, no color */
-.orgs{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-top:1.6rem}
-.org{flex:0 1 220px;max-width:244px;padding:1.7rem 1.2rem;text-align:center;
-  border:1px solid #ebeef0;border-radius:16px;
-  box-shadow:0 1px 2px rgba(20,23,26,.05), 0 18px 36px -22px rgba(20,23,26,.20)}
-.org__img{width:92px;height:92px;border-radius:50%;object-fit:cover;background:var(--mist);
-  margin:0 auto .9rem}
-.org h3{font-size:1rem;margin-bottom:.25rem}
-.org p{margin:0;color:var(--ink-3);font-size:.84rem;line-height:1.4}
+/* organizers — identical card format and grid as the keynote speakers */
+.orgs{margin-top:2.2rem}
 .corr{display:inline-block;font-family:var(--f-mono);font-size:.58rem;text-transform:uppercase;
   letter-spacing:.06em;color:var(--pc);border:1px solid color-mix(in srgb,var(--pc) 45%,#fff);
   border-radius:5px;padding:.05rem .35rem;vertical-align:middle;margin-left:.3rem}
@@ -210,7 +203,6 @@ section{scroll-margin-top:74px}
   font-weight:600;color:#fff;letter-spacing:.02em}
 .ph-fallback.avatar{aspect-ratio:1/1;width:100%;
   background:linear-gradient(135deg,#5b6470,#2a2f36);font-size:1.6rem}
-.org .ph-fallback.avatar{width:92px;height:92px;border-radius:50%;font-size:1.3rem;margin:0 auto .9rem}
 .ph-fallback.logo{height:46px;min-width:96px;padding:0 1rem;border:1px dashed var(--line);
   border-radius:8px;color:var(--ink-3);background:#fff;font-family:var(--f-mono);font-weight:400;
   font-size:.82rem;letter-spacing:.02em}
