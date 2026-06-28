@@ -34,12 +34,19 @@
   }
   var phs = document.querySelectorAll("img.ph");
   Array.prototype.forEach.call(phs, function (img) {
-    // already failed before JS ran?
-    if (img.complete && img.naturalWidth === 0) {
+    function onFail() {
+      // try an alternate filename (e.g. the original spaced name) once
+      var alt = img.getAttribute("data-fallback-src");
+      if (alt && img.getAttribute("data-tried") !== "1") {
+        img.setAttribute("data-tried", "1");
+        img.src = alt;
+        return;
+      }
       makeFallback(img);
-      return;
     }
-    img.addEventListener("error", function () { makeFallback(img); });
+    // already failed before JS ran?
+    if (img.complete && img.naturalWidth === 0) { onFail(); return; }
+    img.addEventListener("error", onFail);
   });
 
   /* ---- scrollspy: highlight the active section in the nav ---- */
