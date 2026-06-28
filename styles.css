@@ -191,6 +191,7 @@ section{scroll-margin-top:74px}
 .timeline .panel{border-top:1px dashed var(--line);margin-top:.4rem;padding-top:1rem}
 
 /* ── logos ─────────────────────────────────────────── */
+#partners{border-top:1px solid var(--line)}
 .logos__head{font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.12em;
   font-size:.72rem;color:var(--ink-3);margin:2rem 0 1rem;font-weight:400}
 .logos__head:first-of-type{margin-top:2rem}
