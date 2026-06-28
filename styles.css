@@ -119,7 +119,7 @@ section{scroll-margin-top:74px}
 .btn--onDark{border-color:rgba(255,255,255,.4)}
 
 .teaser{margin:clamp(2.2rem,5vw,3.4rem) 0 0;padding:0}
-.teaser img{width:100%;border-radius:var(--r);border:1px solid rgba(255,255,255,.12);
+.teaser img{width:100%;display:block;border-radius:var(--r);
   box-shadow:0 24px 60px -24px rgba(0,0,0,.6)}
 .teaser figcaption{font-family:var(--f-mono);font-size:.78rem;color:rgba(255,255,255,.55);
   margin-top:.9rem;max-width:78ch}
