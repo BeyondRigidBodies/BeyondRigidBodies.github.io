@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Beyond Rigid Bodies — SIGGRAPH Asia 2026 Workshop</title>
+<meta name="description" content="Beyond Rigid Bodies (BRB): Next-Generation Differentiable Simulation for Embodied AI and Robotics. A SIGGRAPH Asia 2026 workshop in Kuala Lumpur." />
+<meta property="og:title" content="Beyond Rigid Bodies — SIGGRAPH Asia 2026 Workshop" />
+<meta property="og:description" content="Faithful, fast, differentiable, and deployable simulation beyond rigid-body dynamics — at the intersection of computer graphics and robotics." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/teaser.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ── NAV ─────────────────────────────────────────── -->
+<header class="nav" id="top">
+  <div class="wrap nav__inner">
+    <a class="brand" href="#top" aria-label="Beyond Rigid Bodies home">
+      <span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="brand__txt"><strong>BRB</strong><em>Beyond&nbsp;Rigid&nbsp;Bodies</em></span>
+    </a>
+    <nav class="nav__links" id="menu" aria-label="Primary">
+      <a href="#overview">Overview</a>
+      <a href="#pillars">Pillars</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#organizers">Organizers</a>
+      <a class="nav__cta" href="#attend">Attend</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ── HERO ────────────────────────────────────────── -->
+<section class="hero">
+  <div class="wrap hero__inner">
+    <p class="eyebrow eyebrow--light">SIGGRAPH Asia 2026 · Technical Workshop</p>
+    <h1 class="hero__title">Beyond Rigid Bodies</h1>
+    <p class="hero__sub">Next-Generation Differentiable Simulation for Embodied AI and Robotics — faithful, fast, differentiable, and deployable physics beyond rigid-body dynamics, at the intersection of computer graphics and robotics.</p>
+    <div class="spectrum spectrum--hero" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    <ul class="meta" aria-label="Workshop facts">
+      <li><span class="meta__k">When</span> Dec 1–4, 2026 <span class="tbd">(exact day TBD)</span></li>
+      <li><span class="meta__k">Where</span> Kuala Lumpur, Malaysia</li>
+      <li><span class="meta__k">Format</span> Half day · ~3.5 hrs</li>
+    </ul>
+    <div class="hero__cta">
+      <a class="btn btn--solid" href="#schedule">View schedule</a>
+      <a class="btn btn--ghost" href="mailto:akinesia112@gmail.com">Contact organizers</a>
+    </div>
+
+    <figure class="teaser">
+      <img class="ph" data-kind="wide" data-initials="Teaser figure"
+           src="assets/teaser.png"
+           alt="Four robot-manipulation panels: (1) a hand pressing soft tissue, (2) a dexterous hand reorienting a soft object in-hand, (3) cloth reconstructed from a camera into a simulated digital twin, and (4) a deformable cable reshaped toward a goal via predicted rollouts." />
+      <figcaption>Beyond Rigid Bodies across four contact-rich robot-manipulation settings, each hinging on physics that rigid-body simulators cannot represent.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ── OVERVIEW ────────────────────────────────────── -->
+<section class="band" id="overview">
+  <div class="wrap">
+    <p class="eyebrow">Overview</p>
+    <h2 class="section__title">Simulation, beyond rigid bodies.</h2>
+    <p class="lede">The intersection of computer graphics and robotics has seen immense progress, yet most scalable Embodied AI still relies on rigid-body dynamics. As robots increasingly interact with soft tissue, granular media, deformable objects, and high-precision frictional contact, there is a critical need for next-generation physical simulators that are simultaneously faithful, fast, differentiable, and deployable.</p>
+    <p class="body">Beyond Rigid Bodies (BRB) convenes researchers across computational mechanics, differentiable simulation, and robot learning. The program pairs invited keynote deep dives with extended, structured discussion and a closing panel, organized around four themes.</p>
+  </div>
+</section>
+
+<!-- ── PILLARS ─────────────────────────────────────── -->
+<section class="band band--mist" id="pillars">
+  <div class="wrap">
+    <p class="eyebrow">Four pillars</p>
+    <h2 class="section__title">The technical agenda</h2>
+    <div class="grid grid--4 pillars">
+      <article class="card pillar" style="--accent:var(--pa)">
+        <span class="pillar__no">i</span>
+        <span class="chip">FEM / IPC contact</span>
+        <h3>High-Fidelity Non-Rigid Simulation</h3>
+        <p>FEM, MPM, and IPC solvers; frictional contact; near-incompressible and hyperelastic materials; granular and elastoplastic media; cloth and thin shells; GPU-accelerated, real-time solvers.</p>
+      </article>
+      <article class="card pillar" style="--accent:var(--pb)">
+        <span class="pillar__no">ii</span>
+        <span class="chip">&#8711;<sub>&#952;</sub> contact</span>
+        <h3>Differentiable Simulation for Policy Learning</h3>
+        <p>Analytic gradients through contact for system identification, inverse design, computational design and fabrication, and robot manipulation and control.</p>
+      </article>
+      <article class="card pillar" style="--accent:var(--pc)">
+        <span class="pillar__no">iii</span>
+        <span class="chip">Real &#8594; Sim</span>
+        <h3>Real2Sim2Real &amp; Digital Twins</h3>
+        <p>Neural radiance fields and Gaussian splatting; scene and dynamics reconstruction; Sim-to-Real transfer; calibrated, deployable closed-loop pipelines.</p>
+      </article>
+      <article class="card pillar" style="--accent:var(--pd)">
+        <span class="pillar__no">iv</span>
+        <span class="chip">predict + plan</span>
+        <h3>Simulation as a World Model</h3>
+        <p>Neural and generative world models; learned physics surrogates; neural PDEs/ODEs and reduced-order modeling; multi-modal predictive models for embodied agents.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── SPEAKERS ────────────────────────────────────── -->
+<section class="band" id="speakers">
+  <div class="wrap">
+    <p class="eyebrow">Keynote speakers</p>
+    <h2 class="section__title">Four invited deep dives</h2>
+    <div class="grid grid--4 speakers">
+
+      <article class="card person" style="--accent:var(--pa)">
+        <img class="person__img ph" data-kind="avatar" data-initials="TK" data-accent="var(--pa)" src="assets/Taku-Komura.png" alt="Taku Komura" />
+        <div class="person__body">
+          <span class="tag tag--key">Keynote · In person</span>
+          <h3 class="person__name">Taku Komura</h3>
+          <p class="person__role">Professor · The University of Hong Kong</p>
+          <p class="person__tags">character animation · physics-based simulation · contact solvers</p>
+          <p class="person__bio">Leads research in character animation, physics-based simulation, and interactive techniques. Recent work on whole-body manipulation, contact-rich scene interaction, and GPU-accelerated contact solvers sits at the boundary of animation and robot learning.</p>
+        </div>
+      </article>
+
+      <article class="card person" style="--accent:var(--pb)">
+        <img class="person__img ph" data-kind="avatar" data-initials="TD" data-accent="var(--pb)" src="assets/Tao-Du.png" alt="Tao Du" />
+        <div class="person__body">
+          <span class="tag tag--key">Keynote · In person</span>
+          <h3 class="person__name">Tao Du</h3>
+          <p class="person__role">Assistant Professor · Tsinghua University (IIIS)</p>
+          <p class="person__tags">differentiable simulation · soft robots · inverse design</p>
+          <p class="person__bio">Develops computational design frameworks and differentiable simulation tools for soft robots, actuated mechanisms, and fabrication-aware optimization, discovering robot morphologies and control policies directly from simulation.</p>
+        </div>
+      </article>
+
+      <article class="card person" style="--accent:var(--pd)">
+        <img class="person__img ph" data-kind="avatar" data-initials="YL" data-accent="var(--pd)" src="assets/Yunzhu-Li.png" alt="Yunzhu Li" />
+        <div class="person__body">
+          <span class="tag tag--key">Keynote · Online</span>
+          <h3 class="person__name">Yunzhu Li</h3>
+          <p class="person__role">Assistant Professor · Columbia University (RoboPIL)</p>
+          <p class="person__tags">world models · deformable manipulation · Real2Sim</p>
+          <p class="person__bio">Works on structured world models and physics-inspired predictive models for Embodied AI, with emphasis on multi-modal perception, manipulation of deformable objects, and bridging learned simulators with real-world deployment.</p>
+        </div>
+      </article>
+
+      <article class="card person" style="--accent:var(--pc)">
+        <img class="person__img ph" data-kind="avatar" data-initials="SS" data-accent="var(--pc)" src="assets/Srinath-Sridhar.png" alt="Srinath Sridhar" />
+        <div class="person__body">
+          <span class="tag tag--key">Keynote · Online</span>
+          <h3 class="person__name">Srinath Sridhar</h3>
+          <p class="person__role">Assistant Professor · Brown University (IVL)</p>
+          <p class="person__tags">3D/4D vision · hand–object · dynamic neural fields</p>
+          <p class="person__bio">Builds foundational methods for 3D/4D understanding of objects, humans in motion, and hand–object interaction. Work on dynamic neural fields, articulated-object understanding, and visuo-haptic pose tracking connects to Real2Sim and digital twins.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── SCHEDULE ────────────────────────────────────── -->
+<section class="band band--mist" id="schedule">
+  <div class="wrap">
+    <p class="eyebrow">Schedule</p>
+    <h2 class="section__title">Half day · ~3.5 hours</h2>
+    <p class="note">Keynotes run ~35 minutes including discussion. Exact date, room, and start time will be confirmed by SIGGRAPH Asia 2026.</p>
+    <ol class="timeline">
+      <li><span class="t">0:00–0:15</span><div><h3>Opening Remarks</h3><p>Organizers</p></div></li>
+      <li style="--accent:var(--pa)"><span class="t">0:15–0:50</span><div><h3>Keynote 1</h3><p>Taku Komura <span class="loc">· in person</span></p></div></li>
+      <li style="--accent:var(--pb)"><span class="t">0:50–1:25</span><div><h3>Keynote 2</h3><p>Tao Du <span class="loc">· in person</span></p></div></li>
+      <li class="brk"><span class="t">1:25–1:40</span><div><h3>Coffee Break</h3><p>All attendees</p></div></li>
+      <li style="--accent:var(--pc)"><span class="t">1:40–2:15</span><div><h3>Keynote 3</h3><p>Srinath Sridhar <span class="loc">· online</span></p></div></li>
+      <li style="--accent:var(--pd)"><span class="t">2:15–2:50</span><div><h3>Keynote 4</h3><p>Yunzhu Li <span class="loc">· online</span></p></div></li>
+      <li class="panel"><span class="t">2:50–3:30</span><div><h3>Panel &amp; Open Discussion</h3><p>All speakers + organizers — open problems, benchmarks, practical barriers, and collaboration</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ── ORGANIZERS ──────────────────────────────────── -->
+<section class="band" id="organizers">
+  <div class="wrap">
+    <p class="eyebrow">Organizers</p>
+    <h2 class="section__title">The organizing team</h2>
+    <p class="lede lede--tight">Connecting graphics simulation, computational mechanics, 3D vision, robotics, and physical AI across academia and industry.</p>
+    <div class="grid grid--org orgs">
+      <article class="card org" style="--accent:var(--pa)">
+        <img class="org__img ph" data-kind="avatar" data-initials="SL" src="assets/Shih-Yu-Lai.png" alt="Shih-Yu Lai" />
+        <h3>Shih-Yu Lai</h3><p>Researcher · NTU &amp; MoonShine Animation Studio</p>
+      </article>
+      <article class="card org" style="--accent:var(--pb)">
+        <img class="org__img ph" data-kind="avatar" data-initials="ZZ" src="assets/Ziqiu-Zeng.png" alt="Ziqiu Zeng" />
+        <h3>Ziqiu Zeng</h3><p>Research Fellow · National University of Singapore</p>
+      </article>
+      <article class="card org" style="--accent:var(--pc)">
+        <img class="org__img ph" data-kind="avatar" data-initials="FS" src="assets/Fan-Shi.png" alt="Fan Shi" />
+        <h3>Fan Shi</h3><p>Assistant Professor · National University of Singapore</p>
+      </article>
+      <article class="card org" style="--accent:var(--pd)">
+        <img class="org__img ph" data-kind="avatar" data-initials="PC" src="assets/Peter-Yichen-Chen.png" alt="Peter Yichen Chen" />
+        <h3>Peter Yichen Chen</h3><p>Assistant Professor · University of British Columbia</p>
+      </article>
+      <article class="card org" style="--accent:var(--pa)">
+        <img class="org__img ph" data-kind="avatar" data-initials="TL" src="assets/Tiantian-Liu.png" alt="Tiantian Liu" />
+        <h3>Tiantian Liu</h3><p>Independent Researcher</p>
+      </article>
+      <article class="card org" style="--accent:var(--pb)">
+        <img class="org__img ph" data-kind="avatar" data-initials="YL" src="assets/Yu-Lun-Liu.png" alt="Yu-Lun Liu" />
+        <h3>Yu-Lun Liu</h3><p>Associate Professor · National Yang Ming Chiao Tung University</p>
+      </article>
+      <article class="card org" style="--accent:var(--pc)">
+        <img class="org__img ph" data-kind="avatar" data-initials="BC" src="assets/Bing-Yu-Chen.png" alt="Bing-Yu Chen" />
+        <h3>Bing-Yu Chen <span class="corr">Corresponding</span></h3><p>Distinguished Professor · National Taiwan University</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── PARTNERS ────────────────────────────────────── -->
+<section class="band band--mist" id="partners">
+  <div class="wrap">
+    <p class="eyebrow">Institutions &amp; partners</p>
+    <h3 class="logos__head">Organizing institutions</h3>
+    <div class="logos">
+      <img class="ph" data-kind="logo" data-initials="NTU" src="assets/NTU.png" alt="National Taiwan University" />
+      <img class="ph" data-kind="logo" data-initials="NUS" src="assets/NUS.png" alt="National University of Singapore" />
+      <img class="ph" data-kind="logo" data-initials="UBC" src="assets/UBC.png" alt="University of British Columbia" />
+      <img class="ph" data-kind="logo" data-initials="NYCU" src="assets/NYCU.png" alt="National Yang Ming Chiao Tung University" />
+      <img class="ph" data-kind="logo" data-initials="HKU" src="assets/HKU.png" alt="The University of Hong Kong" />
+      <img class="ph" data-kind="logo" data-initials="Tsinghua" src="assets/Tsinghua.png" alt="Tsinghua University" />
+      <img class="ph" data-kind="logo" data-initials="Columbia" src="assets/Columbia.png" alt="Columbia University" />
+      <img class="ph" data-kind="logo" data-initials="Brown" src="assets/Brown.png" alt="Brown University" />
+    </div>
+    <h3 class="logos__head">Supported by</h3>
+    <div class="logos logos--sponsor">
+      <img class="ph" data-kind="logo" data-initials="MoonShine" src="assets/Moonshine.png" alt="MoonShine Animation Studio" />
+      <img class="ph" data-kind="logo" data-initials="Shanda" src="assets/Shanda.png" alt="Shanda" />
+      <img class="ph" data-kind="logo" data-initials="NVIDIA" src="assets/NVIDIA.png" alt="NVIDIA" />
+      <img class="ph" data-kind="logo" data-initials="Prana Labs" src="assets/PranaLabs.png" alt="Prana Labs" />
+    </div>
+  </div>
+</section>
+
+<!-- ── ATTEND / CTA ────────────────────────────────── -->
+<section class="cta" id="attend">
+  <div class="wrap cta__inner">
+    <div class="spectrum" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    <h2>Bring physics into the loop.</h2>
+    <p>Join us at SIGGRAPH Asia 2026 in Kuala Lumpur (Dec 1–4, 2026) for four keynote deep dives and an extended panel on faithful, fast, differentiable, and deployable simulation.</p>
+    <div class="cta__row">
+      <a class="btn btn--solid" href="mailto:akinesia112@gmail.com">Contact organizers</a>
+      <a class="btn btn--ghost btn--onDark" href="#overview">Read the overview</a>
+    </div>
+    <p class="cta__contact">General: <a href="mailto:akinesia112@gmail.com">akinesia112@gmail.com</a> · Corresponding: <a href="mailto:robin@ntu.edu.tw">robin@ntu.edu.tw</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p><strong>Beyond Rigid Bodies (BRB)</strong> · SIGGRAPH Asia 2026 Workshop · Kuala Lumpur</p>
+    <p class="foot__url">beyondrigidbodies.github.io</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
