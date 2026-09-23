@@ -19,6 +19,37 @@
     });
   }
 
+  /* ---- people carousels: native swipe, buttons, and keyboard ---- */
+  document.querySelectorAll('[data-carousel]').forEach(function (gallery) {
+    var track = gallery.querySelector('.people-carousel');
+    var previous = gallery.querySelector('[data-previous]');
+    var next = gallery.querySelector('[data-next]');
+    function updateButtons() {
+      previous.disabled = track.scrollLeft <= 2;
+      next.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 2;
+    }
+    function move(direction, oneCard) {
+      var card = track.querySelector('.person');
+      var stride = card.getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap);
+      var count = oneCard ? 1 : Math.max(1, Math.floor(track.clientWidth / stride));
+      var behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+      track.scrollBy({left: direction * stride * count, behavior: behavior});
+    }
+    previous.addEventListener('click', function () { move(-1, false); });
+    next.addEventListener('click', function () { move(1, false); });
+    track.addEventListener('scroll', updateButtons, {passive: true});
+    track.addEventListener('keydown', function (event) {
+      if (event.target !== track) return;
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        move(event.key === 'ArrowLeft' ? -1 : 1, true);
+      }
+    });
+    if ('ResizeObserver' in window) new ResizeObserver(updateButtons).observe(track);
+    else window.addEventListener('resize', updateButtons);
+    updateButtons();
+  });
+
   /* ---- image fallback: swap broken <img> for an initials/logo placeholder ---- */
   function makeFallback(img) {
     var kind = img.getAttribute("data-kind") || "avatar";

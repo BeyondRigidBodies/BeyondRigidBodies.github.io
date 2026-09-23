@@ -9,10 +9,7 @@
 <meta property="og:description" content="A full day of NVIDIA Warp demonstrations, BRB research clinics and group work, Newton solver validation, and Isaac Lab. Provisional schedule: 09:00–17:30, Kuala Lumpur (UTC+8); exact date pending." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="assets/teaser.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="styles.css?v=20260923-carousel" />
 </head>
 <body>
 
@@ -20,7 +17,6 @@
 <header class="nav" id="top">
   <div class="wrap nav__inner">
     <a class="brand" href="#top" aria-label="Beyond Rigid Bodies × Newton for Robotics home">
-      <span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
       <span class="brand__txt"><strong>BRB × Newton</strong><em>SIGGRAPH Asia 2026</em></span>
     </a>
     <nav class="nav__links" id="menu" aria-label="Primary">
@@ -45,7 +41,6 @@
     <p class="eyebrow eyebrow--light">SIGGRAPH Asia 2026 · Full-Day Discussion-focused Workshop</p>
     <h1 class="hero__title">Beyond Rigid Bodies <span class="hero__partner">× Newton for Robotics</span></h1>
     <p class="hero__sub">Open GPU Physics, Differentiable Simulation, and Multi-Solver Ecosystems for Physical AI and Embodied Robotics</p>
-    <div class="spectrum spectrum--hero" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
     <ul class="meta" aria-label="Workshop facts">
       <li><span class="meta__k">Date</span> Dec 3 or 4, 2026 <span class="tbd">(final date pending)</span></li>
       <li><span class="meta__k">Time · provisional</span> 09:00–17:30 · Kuala Lumpur (UTC+8)</li>
@@ -76,7 +71,7 @@
     <p class="body overview__participation">Academic and industry participants jointly produce a task-to-solver decision record, an evaluation checklist, and prioritized open questions. The program welcomes alternative engines, critical comparisons, and negative results; software demonstrations provide concrete evidence for discussion throughout the day. The core activities remain accessible without a GPU or internet connection.</p>
     <figure class="program-figure">
       <a href="assets/newton-figure-1.png" target="_blank" rel="noopener">
-        <img src="assets/newton-figure-1.png" width="1884" height="1086" alt="Architecture diagram linking OpenUSD, Isaac, Newton, MuJoCo, and NVIDIA Warp, with shared interfaces and multiple solver paths." />
+        <img src="assets/newton-figure-1.png" style="max-width:100%;height:auto;object-fit:contain" width="1884" height="1086" alt="Architecture diagram linking OpenUSD, Isaac, Newton, MuJoCo, and NVIDIA Warp, with shared interfaces and multiple solver paths." />
       </a>
       <figcaption><strong>From research requirements to solver decisions.</strong> The Newton session starts from the groups' requirements. A guided example exposes model and state interfaces, solver assumptions, and a controlled comparison or failure case. The Isaac Lab session then connects that decision to a robot-learning task: observations, actions, rewards, randomization, and evaluation. <a href="assets/newton-figure-1.png" target="_blank" rel="noopener">Open diagram at full size</a>.</figcaption>
     </figure>
@@ -91,25 +86,21 @@
     <div class="grid grid--4 pillars">
       <article class="card pillar" style="--accent:var(--pa)">
         <span class="pillar__no">i</span>
-        <span class="chip">FEM / IPC contact</span>
         <h3>High-Fidelity Non-Rigid Simulation</h3>
         <p>FEM, MPM, IPC, frictional contact, compliant materials, cloth, and granular media expose behavior absent from a simple rigid-contact baseline. Participants identify the physical effect that changes task success, the cost of representing it, and a diagnostic scene that tests whether increased fidelity helps.</p>
       </article>
       <article class="card pillar" style="--accent:var(--pb)">
         <span class="pillar__no">ii</span>
-        <span class="chip">&#8711;<sub>&#952;</sub> contact</span>
         <h3>Differentiable Simulation for Policy Learning</h3>
         <p>System identification, inverse design, morphology optimization, and policy learning require different derivatives and tolerances for approximation. Participants examine contact discontinuities, stiffness, and long-horizon sensitivity, then choose a gradient check or alternative optimization strategy.</p>
       </article>
       <article class="card pillar" style="--accent:var(--pc)">
         <span class="pillar__no">iii</span>
-        <span class="chip">Real &#8594; Sim</span>
         <h3>Real2Sim2Real &amp; Digital Twins</h3>
         <p>Reconstruction, neural scene representations, video-based system identification, and policy evaluation connect observations to a usable physical model. Participants list identifiable parameters, unresolved ambiguities, and held-out observations needed to validate a twin.</p>
       </article>
       <article class="card pillar" style="--accent:var(--pd)">
         <span class="pillar__no">iv</span>
-        <span class="chip">predict + plan</span>
         <h3>Simulation as a World Model</h3>
         <p>Learned dynamics, neural constitutive models, and structured predictive models can complement physical solvers. Participants ask which predictions a controller needs, how to test consistency over time, and what failures reveal limits to generalization.</p>
       </article>
@@ -120,110 +111,100 @@
 <!-- ── SPEAKERS ────────────────────────────────────── -->
 <section class="band" id="speakers">
   <div class="wrap">
-    <p class="eyebrow">Invited &amp; presenting speakers</p>
-    <h2 class="section__title">Research clinics meet practical simulation</h2>
-    <p class="lede">Four confirmed invited speakers contribute to the BRB research clinics. Clinic assignments and individual times remain provisional; delivery arrangements for Srinath Sridhar and Yunzhu Li are pending.</p>
-    <div class="grid grid--4 speakers">
-
-      <article class="card person">
-        <img class="person__img ph" data-kind="avatar" data-initials="TK" src="assets/Taku-Komura.png" alt="Taku Komura" />
+    <p class="eyebrow">Research &amp; industry</p>
+    <h2 class="section__title">Speakers</h2>
+    <p class="lede">Four invited researchers and three core NVIDIA presenters, with two additional NVIDIA speakers awaiting confirmation.</p>
+    <div class="people-gallery" data-carousel>
+      <div class="carousel-controls">
+        <p class="carousel-count">9 speakers</p>
+        <button class="carousel-button" type="button" data-previous aria-controls="speakers-carousel" aria-label="Previous speakers" disabled><span aria-hidden="true">←</span></button>
+        <button class="carousel-button" type="button" data-next aria-controls="speakers-carousel" aria-label="Next speakers"><span aria-hidden="true">→</span></button>
+      </div>
+      <div class="people-carousel" id="speakers-carousel" role="list" tabindex="0" aria-label="Speakers; swipe or use the arrow buttons to browse">
+      <article class="card person" role="listitem">
+        <img class="person__img ph" data-kind="avatar" data-initials="TK" src="assets/Taku-Komura.png" alt="Taku Komura" draggable="false" />
         <div class="person__body">
-          <span class="tag tag--key">Invited speaker</span>
+          <span class="tag">Invited speaker</span>
           <h3 class="person__name">Taku Komura</h3>
           <p class="person__role">Professor · The University of Hong Kong</p>
-          <p class="person__tags">character animation · physics-based simulation · contact solvers</p>
-          <p class="person__bio">Taku Komura is a Professor of Computer Science at The University of Hong Kong, where he leads research in character animation, physics-based simulation, and interactive techniques. His recent work on whole-body manipulation, contact-rich scene interactions, and GPU-accelerated contact solvers addresses core challenges at the boundary of physics-based animation and robot learning. His expertise in blending physics simulation with data-driven motion synthesis and reinforcement learning makes him an important contributor to discussions on differentiable animation control and dexterous manipulation. He has received best paper awards at major venues including SIGGRAPH and Eurographics and serves on editorial boards in graphics and robotics.</p>
+          <p class="person__bio">Researches character animation, physics-based simulation, and contact-rich control for robot learning.</p>
         </div>
       </article>
-
-      <article class="card person">
-        <img class="person__img ph" data-kind="avatar" data-initials="TD" src="assets/Tao-Du.png" alt="Tao Du" />
+      <article class="card person" role="listitem">
+        <img class="person__img ph" data-kind="avatar" data-initials="TD" src="assets/Tao-Du.png" alt="Tao Du" draggable="false" />
         <div class="person__body">
-          <span class="tag tag--key">Invited speaker</span>
+          <span class="tag">Invited speaker</span>
           <h3 class="person__name">Tao Du</h3>
           <p class="person__role">Assistant Professor · Tsinghua University (IIIS)</p>
-          <p class="person__tags">differentiable simulation · soft robots · inverse design</p>
-          <p class="person__bio">Tao Du is an Assistant Professor in the Institute for Interdisciplinary Information Sciences at Tsinghua University, working at the intersection of computer graphics, artificial intelligence, and robotics. His research develops computational design frameworks and differentiable simulation tools for soft robots, actuated mechanisms, and fabrication-aware optimization. His differentiable physics engines and inverse-design algorithms address the automatic discovery of robot morphologies and control policies from simulation. He received his Ph.D. from MIT CSAIL and has published in venues including SIGGRAPH, ICLR, and NeurIPS.</p>
+          <p class="person__bio">Develops differentiable simulation and computational design methods for soft robots, actuated mechanisms, and inverse design.</p>
         </div>
       </article>
-
-      <article class="card person">
-        <img class="person__img ph" data-kind="avatar" data-initials="YL" src="assets/Yunzhu-Li.png" alt="Yunzhu Li" />
+      <article class="card person" role="listitem">
+        <img class="person__img ph" data-kind="avatar" data-initials="YL" src="assets/Yunzhu-Li.png" alt="Yunzhu Li" draggable="false" />
         <div class="person__body">
-          <span class="tag tag--key">Invited speaker</span>
+          <span class="tag">Invited speaker · delivery pending</span>
           <h3 class="person__name">Yunzhu Li</h3>
           <p class="person__role">Assistant Professor · Columbia University (RoboPIL)</p>
-          <p class="person__tags">world models · deformable manipulation · Real2Sim</p>
-          <p class="person__bio">The organizing team has proposed online participation for Yunzhu Li; a remote-presentation exception and its delivery arrangements have not been verified with the workshop chairs. His proposed clinic is in the morning. He is an Assistant Professor of Computer Science at Columbia University and directs the Robot Perception, Interaction, and Learning Lab. His research focuses on structured world models and physics-inspired predictive models for Embodied AI, with particular emphasis on multi-modal perception and manipulation of deformable objects. His work on neural dynamics models for closed-loop robot control and on bridging learned simulators with real-world deployment directly addresses differentiable simulation and Real2Sim2Real transfer. He received his Ph.D. from MIT and was previously a postdoctoral researcher at Stanford University.</p>
+          <p class="person__bio">Studies structured world models, deformable-object manipulation, and neural dynamics for closed-loop robot control.</p>
         </div>
       </article>
-
-      <article class="card person">
-        <img class="person__img ph" data-kind="avatar" data-initials="SS" src="assets/Srinath-Sridhar.png" alt="Srinath Sridhar" />
+      <article class="card person" role="listitem">
+        <img class="person__img ph" data-kind="avatar" data-initials="SS" src="assets/Srinath-Sridhar.png" alt="Srinath Sridhar" draggable="false" />
         <div class="person__body">
-          <span class="tag tag--key">Invited speaker</span>
+          <span class="tag">Invited speaker · delivery pending</span>
           <h3 class="person__name">Srinath Sridhar</h3>
           <p class="person__role">Assistant Professor · Brown University (IVL)</p>
-          <p class="person__tags">3D/4D vision · hand–object · dynamic neural fields</p>
-          <p class="person__bio">The organizing team has proposed online participation for Srinath Sridhar; a remote-presentation exception and its delivery arrangements have not been verified with the workshop chairs. His proposed clinic is in the morning. He is the John E. Savage Assistant Professor of Computer Science at Brown University and leads the Interactive 3D Vision &amp; Learning Lab. His research develops methods for 3D spatiotemporal understanding of objects, humans in motion, and hand–object and contact-rich interaction, with applications in robotics, mixed reality, and Embodied AI. His work on dynamic neural fields, 4D reconstruction, articulated-object understanding, and visuo-haptic object pose tracking directly connects perception and reconstruction to the workshop&#x27;s Real2Sim2Real and digital-twin themes. He received his Ph.D. from the Max Planck Institute for Informatics and was a postdoctoral researcher at Stanford University with Leonidas Guibas.</p>
+          <p class="person__bio">Studies 3D and 4D scene understanding, hand–object interaction, and reconstruction for robotics and digital twins.</p>
         </div>
       </article>
-
-    </div>
-    <!-- ── NVIDIA / NEWTON SPEAKERS ────────────────── -->
-    <div class="people-group" id="nvidia-team">
-    <p class="eyebrow">NVIDIA / Newton presenting team</p>
-    <h3 class="section__title">From GPU physics to robot learning</h3>
-    <p class="lede">Johnny Nunez Cano, Asier Arranz, and Lu Shi form the core team for the NVIDIA Warp, Newton, and Isaac Lab sessions. Individual presentation and facilitation assignments will be finalized jointly.</p>
-    <div class="grid grid--3 presenting-team">
-      <article class="card person" id="johnny-nunez-cano">
-        <img class="person__img ph" data-kind="avatar" data-initials="JN" src="assets/Johnny-Nunez-Cano.png" alt="Johnny Nunez Cano" />
+      <article class="card person" role="listitem" id="johnny-nunez-cano">
+        <img class="person__img ph" data-kind="avatar" data-initials="JN" src="assets/Johnny-Nunez-Cano.png" alt="Johnny Nunez Cano" draggable="false" />
         <div class="person__body">
           <span class="tag">Presenting organizer</span>
           <h3 class="person__name">Johnny Nunez Cano</h3>
           <p class="person__role">NVIDIA</p>
-          <p class="person__bio">Johnny Nunez Cano works at the intersection of physical AI, robotics, and edge computing. He builds and teaches end-to-end workflows spanning simulation, robot learning, teleoperation, foundation models, and real-time deployment, including Newton, NVIDIA Warp, Isaac Sim, Isaac Lab, GR00T, and Jetson. Before joining NVIDIA, he worked on computer vision, edge-AI optimization, and human behavior analysis. For this workshop, Johnny will coordinate the shared narrative and the handoff from BRB research requirements to the Newton and Isaac Lab sessions, frame developer questions, and help turn discussion into reproducible examples and community follow-up.</p>
+          <p class="person__bio">Connects physical AI, robotics, and simulation workflows, coordinating the NVIDIA sessions and their handoff from the BRB research clinics.</p>
         </div>
       </article>
-      <article class="card person" id="asier-arranz">
-        <img class="person__img ph" data-kind="avatar" data-initials="AA" src="assets/Asier-Arranz.jpg" alt="Asier Arranz" />
+      <article class="card person" role="listitem" id="asier-arranz">
+        <img class="person__img ph" data-kind="avatar" data-initials="AA" src="assets/Asier-Arranz.jpg" alt="Asier Arranz" draggable="false" />
         <div class="person__body">
           <span class="tag">Presenting organizer</span>
           <h3 class="person__name">Asier Arranz</h3>
           <p class="person__role">Senior Staff Developer Advocate · NVIDIA</p>
-          <p class="person__bio">Asier Arranz is a Senior Staff Developer Advocate focused on robotics, physical AI, simulation, and edge computing. He develops live demonstrations and hands-on workshops connecting simulation and vision-language-action models with Jetson systems and physical robots, including open-source Newton and MuJoCo Warp demonstrations. Before his current role, he worked in technical marketing for NVIDIA Jetson and led IBM&#x27;s Global Quantum Community Lab. For this workshop, Asier will support the NVIDIA Warp introduction, practical demonstrations, and audience exercises. The NVIDIA team will confirm the detailed division of presentation and facilitation roles together.</p>
+          <p class="person__bio">Builds robotics and simulation demonstrations with Newton, NVIDIA Warp, and Jetson, and supports practical workshop exercises.</p>
         </div>
       </article>
-      <article class="card person" id="lu-shi">
-        <img class="person__img person__img--lu-shi ph" data-kind="avatar" data-initials="LS" src="assets/Lu-Shi.jpeg" alt="Lu Shi" />
+      <article class="card person" role="listitem" id="lu-shi">
+        <img class="person__img person__img--lu-shi ph" data-kind="avatar" data-initials="LS" src="assets/Lu-Shi.jpeg" alt="Lu Shi" draggable="false" />
         <div class="person__body">
           <span class="tag">Speaker</span>
           <h3 class="person__name">Lu Shi</h3>
           <p class="person__role">Physical AI Developer Relations · NVIDIA</p>
-          <p class="person__bio">Lu Shi works in Physical AI Developer Relations at NVIDIA in Shanghai, China. She supports the adoption of NVIDIA robotics and simulation technologies across research, open-source, and industry communities in China, including Isaac Sim, Isaac Lab, Newton, NVIDIA Warp, Cosmos, and GR00T. Her work connects developer requirements and research workflows with GPU-accelerated simulation, robot learning, and the broader Physical AI ecosystem. Lu is part of the NVIDIA presenting team for the opening and closing practical sessions; her exact speaking segment will be agreed with Johnny and Asier.</p>
+          <p class="person__bio">Supports NVIDIA robotics and simulation communities through Isaac Sim, Isaac Lab, Newton, and NVIDIA Warp.</p>
         </div>
       </article>
-      <article class="card person" id="mohammad-mohajerani">
-        <img class="person__img ph" data-kind="avatar" data-initials="MM" src="assets/Mohammad-Mohajerani.jpeg" alt="Mohammad Mohajerani" />
+      <article class="card person" role="listitem" id="mohammad-mohajerani">
+        <img class="person__img ph" data-kind="avatar" data-initials="MM" src="assets/Mohammad-Mohajerani.jpeg" alt="Mohammad Mohajerani" draggable="false" />
         <div class="person__body">
-          <span class="tag">Tentative · unconfirmed</span>
+          <span class="tag">Tentative speaker · unconfirmed</span>
           <h3 class="person__name">Mohammad Mohajerani</h3>
           <p class="person__role">Senior Product Manager · NVIDIA</p>
-          <p class="person__bio">Mohammad Mohajerani is a senior product manager whose work supports high-performance simulation and real-time physics for physical AI, engineering, and AI-driven digital twins through NVIDIA Warp and Newton. Before NVIDIA, he held product and engineering leadership roles at Sanctuary AI and Haply Robotics and worked on physics engines and skills-training simulators at CM Labs Simulations. He holds a master&#x27;s degree in mechanical engineering from Concordia University, focused on aerial robotics, system identification, and control optimization. Participation has not been confirmed. If confirmed, his proposed contribution would address Newton&#x27;s product direction, solver choice, extensibility, migration, and evidence for adoption.</p>
+          <p class="person__bio">Works on high-performance simulation and real-time physics through NVIDIA Warp and Newton.</p>
         </div>
       </article>
-      <article class="card person" id="spencer-huang">
-        <img class="person__img ph" data-kind="avatar" data-initials="SH" src="assets/Spencer-Huang.jpeg" alt="Spencer Huang" />
+      <article class="card person" role="listitem" id="spencer-huang">
+        <img class="person__img ph" data-kind="avatar" data-initials="SH" src="assets/Spencer-Huang.jpeg" alt="Spencer Huang" draggable="false" />
         <div class="person__body">
-          <span class="tag">Tentative · unconfirmed</span>
+          <span class="tag">Tentative speaker · unconfirmed</span>
           <h3 class="person__name">Spencer Huang</h3>
           <p class="person__role">Robotics Software Product · NVIDIA</p>
-          <p class="person__bio">Spencer Huang leads robotics software product at NVIDIA. His work centers on open simulation frameworks for robot learning, synthetic-data generation, and robot autonomy across industrial manipulation, mobile systems, and humanoids. He works across research, engineering, product, and developer communities to align asset, solver, training, and deployment requirements. He earned a technical MBA from New York University with a focus on artificial intelligence. Participation has not been confirmed. If confirmed, his proposed contribution would address user needs, interoperability, and evolution of an open physics ecosystem.</p>
+          <p class="person__bio">Leads robotics software product for simulation, robot learning, and robot autonomy.</p>
         </div>
       </article>
+      </div>
     </div>
-    <p class="team__status"><strong>Tentative, unconfirmed:</strong> Mohammad Mohajerani and Spencer Huang (NVIDIA). Any contribution would be coordinated within the existing NVIDIA sessions after confirmation.</p>
-    </div>
+    <p class="team__status">Speaking slots and clinic assignments are provisional. Delivery arrangements for Srinath Sridhar and Yunzhu Li remain pending.</p>
   </div>
 </section>
 
@@ -256,7 +237,7 @@
     <p class="schedule__detail">Each proposed 30-minute research clinic combines 15 minutes of technical input, 10 minutes of participant work or discussion, and 5 minutes of synthesis.</p>
     <figure class="program-figure">
       <a href="assets/newton-figure-2.png" target="_blank" rel="noopener">
-        <img src="assets/newton-figure-2.png" width="1980" height="600" alt="Discussion model connecting short research inputs, open discussion, lightning talks, breakout tables, and synthesis, with participant roles for questions, critique, cases, facilitation, recording, and follow-up." />
+        <img src="assets/newton-figure-2.png" style="max-width:100%;height:auto;object-fit:contain" width="1980" height="600" alt="Discussion model connecting short research inputs, open discussion, lightning talks, breakout tables, and synthesis, with participant roles for questions, critique, cases, facilitation, recording, and follow-up." />
       </a>
       <figcaption><strong>Discussion activities across the full-day program.</strong> Each table uses a facilitator, recorder, skeptic, and case owner; attendees may move between themes. Research clinics and facilitated case work produce modeling and validation requirements for the closing Newton and Isaac Lab sessions. The timetable above gives the integrated session order. <a href="assets/newton-figure-2.png" target="_blank" rel="noopener">Open diagram at full size</a>.</figcaption>
     </figure>
@@ -266,103 +247,122 @@
 <!-- ── ORGANIZERS ──────────────────────────────────── -->
 <section class="band" id="organizers">
   <div class="wrap">
-    <p class="eyebrow">Organizers</p>
-    <h2 class="section__title">The BRB × Newton organizing team</h2>
-    <p class="lede lede--tight">Connecting graphics simulation, computational mechanics, 3D vision, robotics, and physical AI across academia and industry.</p>
-    <div class="grid grid--4 orgs">
-      <article class="card person">
-        <img class="person__img ph" data-kind="avatar" data-initials="SL" src="assets/Shih-Yu-Lai.png" data-fallback-src="assets/Shih-Yu%20Lai.png" alt="Shih-Yu Lai" />
+    <p class="eyebrow">Workshop team</p>
+    <h2 class="section__title">Organizers &amp; contributors</h2>
+    <p class="lede">The BRB organizing team and NVIDIA / Newton contributors.</p>
+    <div class="people-gallery" data-carousel>
+      <div class="carousel-controls">
+        <p class="carousel-count">12 organizers and contributors</p>
+        <button class="carousel-button" type="button" data-previous aria-controls="organizers-carousel" aria-label="Previous organizers and contributors" disabled><span aria-hidden="true">←</span></button>
+        <button class="carousel-button" type="button" data-next aria-controls="organizers-carousel" aria-label="Next organizers and contributors"><span aria-hidden="true">→</span></button>
+      </div>
+      <div class="people-carousel" id="organizers-carousel" role="list" tabindex="0" aria-label="Organizers and contributors; swipe or use the arrow buttons to browse">
+      <article class="card person" role="listitem">
+        <img class="person__img ph" data-kind="avatar" data-initials="SL" src="assets/Shih-Yu-Lai.png" data-fallback-src="assets/Shih-Yu%20Lai.png" alt="Shih-Yu Lai" draggable="false" />
         <div class="person__body">
+          <span class="tag">Organizer</span>
           <h3 class="person__name">Shih-Yu Lai</h3>
-          <p class="person__role">Master's student · National Taiwan University; Technical practitioner · MoonShine Animation Studio</p>
+          <p class="person__role">NTU · MoonShine Animation Studio</p>
+          <p class="person__bio">Master&#x27;s student and technical practitioner researching neural PDEs, differentiable simulation, and robotics.</p>
         </div>
       </article>
-      <article class="card person">
-        <img class="person__img ph" data-kind="avatar" data-initials="ZZ" src="assets/Ziqiu-Zeng.png" alt="Ziqiu Zeng" />
+      <article class="card person" role="listitem">
+        <img class="person__img ph" data-kind="avatar" data-initials="ZZ" src="assets/Ziqiu-Zeng.png" alt="Ziqiu Zeng" draggable="false" />
         <div class="person__body">
+          <span class="tag">Organizer</span>
           <h3 class="person__name">Ziqiu Zeng</h3>
           <p class="person__role">Research Manager · National University of Singapore</p>
+          <p class="person__bio">Works on real-time hyperelastic simulation, frictional contact, and simulation infrastructure for robotics.</p>
         </div>
       </article>
-      <article class="card person">
-        <img class="person__img ph" data-kind="avatar" data-initials="FS" src="assets/Fan-Shi.png" data-fallback-src="assets/Fan%20Shi.png" alt="Fan Shi" />
+      <article class="card person" role="listitem">
+        <img class="person__img ph" data-kind="avatar" data-initials="FS" src="assets/Fan-Shi.png" data-fallback-src="assets/Fan%20Shi.png" alt="Fan Shi" draggable="false" />
         <div class="person__body">
+          <span class="tag">Organizer</span>
           <h3 class="person__name">Fan Shi</h3>
           <p class="person__role">Researcher · National University of Singapore</p>
+          <p class="person__bio">Studies physical simulation for policy learning, safety-aware control, and learned models for robotic systems.</p>
         </div>
       </article>
-      <article class="card person">
-        <img class="person__img ph" data-kind="avatar" data-initials="PC" src="assets/Peter-Yichen-Chen.png" alt="Peter Yichen Chen" />
+      <article class="card person" role="listitem">
+        <img class="person__img ph" data-kind="avatar" data-initials="PC" src="assets/Peter-Yichen-Chen.png" alt="Peter Yichen Chen" draggable="false" />
         <div class="person__body">
+          <span class="tag">Organizer</span>
           <h3 class="person__name">Peter Yichen Chen</h3>
           <p class="person__role">Assistant Professor · University of British Columbia</p>
+          <p class="person__bio">Leads the UBC PhysAI Lab, studying computational design, fabrication, control, and physical simulation.</p>
         </div>
       </article>
-      <article class="card person">
-        <img class="person__img ph" data-kind="avatar" data-initials="TL" src="assets/Tiantian-Liu.png" alt="Tiantian Liu" />
+      <article class="card person" role="listitem">
+        <img class="person__img ph" data-kind="avatar" data-initials="TL" src="assets/Tiantian-Liu.png" alt="Tiantian Liu" draggable="false" />
         <div class="person__body">
+          <span class="tag">Organizer</span>
           <h3 class="person__name">Tiantian Liu</h3>
           <p class="person__role">Independent Researcher</p>
+          <p class="person__bio">Develops robust solvers for deformable bodies and physics-based character animation.</p>
         </div>
       </article>
-      <article class="card person">
-        <img class="person__img ph" data-kind="avatar" data-initials="YL" src="assets/Yu-Lun-Liu.png" alt="Yu-Lun Liu" />
+      <article class="card person" role="listitem">
+        <img class="person__img ph" data-kind="avatar" data-initials="YL" src="assets/Yu-Lun-Liu.png" alt="Yu-Lun Liu" draggable="false" />
         <div class="person__body">
+          <span class="tag">Organizer</span>
           <h3 class="person__name">Yu-Lun Liu</h3>
           <p class="person__role">Associate Professor · National Yang Ming Chiao Tung University</p>
+          <p class="person__bio">Studies computer graphics, 3D vision, neural rendering, and neural scene representations for embodied agents.</p>
         </div>
       </article>
-      <article class="card person">
-        <img class="person__img ph" data-kind="avatar" data-initials="BC" src="assets/Bing-Yu-Chen.png" alt="Bing-Yu Chen" />
+      <article class="card person" role="listitem">
+        <img class="person__img ph" data-kind="avatar" data-initials="BC" src="assets/Bing-Yu-Chen.png" alt="Bing-Yu Chen" draggable="false" />
         <div class="person__body">
+          <span class="tag">Organizer</span>
           <h3 class="person__name">Bing-Yu Chen</h3>
           <p class="person__role">Professor · National Taiwan University</p>
+          <p class="person__bio">Leads NTU&#x27;s Computer Graphics Group, with research in computer graphics, interactive techniques, and multimedia systems.</p>
         </div>
       </article>
-    </div>
-    <div class="people-group" id="nvidia-organizers">
-      <p class="eyebrow">NVIDIA / Newton team</p>
-      <h3 class="section__title">Organizers &amp; presenting contributors</h3>
-      <p class="lede">Johnny Nunez Cano and Asier Arranz are the named organizers in the Newton proposal, with Lu Shi joining as a speaker. Johnny is the NVIDIA team's primary contact. Mohammad Mohajerani and Spencer Huang are tentative, unconfirmed speakers.</p>
-      <div class="grid grid--3 orgs">
-      <article class="card person">
-        <img class="person__img ph" data-kind="avatar" data-initials="JN" src="assets/Johnny-Nunez-Cano.png" alt="Johnny Nunez Cano" />
+      <article class="card person" role="listitem">
+        <img class="person__img ph" data-kind="avatar" data-initials="JN" src="assets/Johnny-Nunez-Cano.png" alt="Johnny Nunez Cano" draggable="false" />
         <div class="person__body">
           <span class="tag">Presenting organizer</span>
           <h3 class="person__name">Johnny Nunez Cano</h3>
           <p class="person__role">NVIDIA</p>
+          <p class="person__bio">Connects physical AI, robotics, and simulation workflows, coordinating the NVIDIA sessions and their handoff from the BRB research clinics.</p>
         </div>
       </article>
-      <article class="card person">
-        <img class="person__img ph" data-kind="avatar" data-initials="AA" src="assets/Asier-Arranz.jpg" alt="Asier Arranz" />
+      <article class="card person" role="listitem">
+        <img class="person__img ph" data-kind="avatar" data-initials="AA" src="assets/Asier-Arranz.jpg" alt="Asier Arranz" draggable="false" />
         <div class="person__body">
           <span class="tag">Presenting organizer</span>
           <h3 class="person__name">Asier Arranz</h3>
           <p class="person__role">Senior Staff Developer Advocate · NVIDIA</p>
+          <p class="person__bio">Builds robotics and simulation demonstrations with Newton, NVIDIA Warp, and Jetson, and supports practical workshop exercises.</p>
         </div>
       </article>
-      <article class="card person">
-        <img class="person__img person__img--lu-shi ph" data-kind="avatar" data-initials="LS" src="assets/Lu-Shi.jpeg" alt="Lu Shi" />
+      <article class="card person" role="listitem">
+        <img class="person__img person__img--lu-shi ph" data-kind="avatar" data-initials="LS" src="assets/Lu-Shi.jpeg" alt="Lu Shi" draggable="false" />
         <div class="person__body">
           <span class="tag">Speaker</span>
           <h3 class="person__name">Lu Shi</h3>
           <p class="person__role">Physical AI Developer Relations · NVIDIA</p>
+          <p class="person__bio">Supports NVIDIA robotics and simulation communities through Isaac Sim, Isaac Lab, Newton, and NVIDIA Warp.</p>
         </div>
       </article>
-      <article class="card person">
-        <img class="person__img ph" data-kind="avatar" data-initials="MM" src="assets/Mohammad-Mohajerani.jpeg" alt="Mohammad Mohajerani" />
+      <article class="card person" role="listitem">
+        <img class="person__img ph" data-kind="avatar" data-initials="MM" src="assets/Mohammad-Mohajerani.jpeg" alt="Mohammad Mohajerani" draggable="false" />
         <div class="person__body">
           <span class="tag">Tentative speaker · unconfirmed</span>
           <h3 class="person__name">Mohammad Mohajerani</h3>
           <p class="person__role">Senior Product Manager · NVIDIA</p>
+          <p class="person__bio">Works on high-performance simulation and real-time physics through NVIDIA Warp and Newton.</p>
         </div>
       </article>
-      <article class="card person">
-        <img class="person__img ph" data-kind="avatar" data-initials="SH" src="assets/Spencer-Huang.jpeg" alt="Spencer Huang" />
+      <article class="card person" role="listitem">
+        <img class="person__img ph" data-kind="avatar" data-initials="SH" src="assets/Spencer-Huang.jpeg" alt="Spencer Huang" draggable="false" />
         <div class="person__body">
           <span class="tag">Tentative speaker · unconfirmed</span>
           <h3 class="person__name">Spencer Huang</h3>
           <p class="person__role">Robotics Software Product · NVIDIA</p>
+          <p class="person__bio">Leads robotics software product for simulation, robot learning, and robot autonomy.</p>
         </div>
       </article>
       </div>
@@ -398,7 +398,6 @@
 <!-- ── ATTEND / CTA ────────────────────────────────── -->
 <section class="cta" id="attend">
   <div class="wrap cta__inner">
-    <div class="spectrum" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
     <h2>Bring physics into the loop.</h2>
     <p>Join us at SIGGRAPH Asia 2026 in Kuala Lumpur for a full day of GPU physics, BRB research clinics, collaborative case work, and Newton and Isaac Lab demonstrations. The workshop is proposed for December 3 or 4, 2026; the final date and room will be announced here.</p>
     <div class="cta__row">
@@ -418,6 +417,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=20260923-carousel"></script>
 </body>
 </html>
