@@ -105,6 +105,12 @@ section{scroll-margin-top:74px}
 .hero__sub{max-width:64ch;color:rgba(255,255,255,.78);font-size:clamp(1.02rem,1.7vw,1.22rem);margin:0}
 .hero .tbd{color:rgba(255,255,255,.72)}
 .overview__participation{margin-top:1rem}
+.program-figure{margin:2.2rem 0 0}
+.program-figure>a{display:block;background:#fff;border:1px solid var(--line);
+  border-radius:var(--r);overflow:hidden}
+.program-figure img{width:100%;height:auto}
+.program-figure figcaption{margin-top:1rem;color:var(--ink-2);font-size:.92rem;max-width:95ch}
+.program-figure figcaption a{font-weight:600;text-underline-offset:.2em}
 .meta{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;padding:0;margin:0 0 1.7rem}
 .meta li{font-size:.95rem;color:rgba(255,255,255,.9)}
 .meta__k{font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.12em;
@@ -158,11 +164,13 @@ section{scroll-margin-top:74px}
 
 /* speaker cards */
 .speakers{margin-top:2.2rem}
+.people-group{margin-top:3.5rem}
 .presenting-team{margin-top:2rem}
 .team__status{color:var(--ink-2);font-size:.92rem;max-width:85ch;margin:1.5rem 0 0}
 .person{display:flex;flex-direction:column;border-color:#e9ecef;
   box-shadow:0 1px 2px rgba(20,23,26,.04), 0 16px 32px -20px rgba(20,23,26,.18)}
 .person__img{width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--mist)}
+.person__img--lu-shi{object-position:35% center}
 .person__body{padding:1.1rem 1.2rem 1.4rem;display:flex;flex-direction:column;gap:.45rem}
 .tag{display:inline-block;align-self:flex-start;font-family:var(--f-mono);font-size:.66rem;
   text-transform:uppercase;letter-spacing:.08em;padding:.2rem .55rem;border-radius:6px;
