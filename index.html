@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Beyond Rigid Bodies — SIGGRAPH Asia 2026 Workshop</title>
-<meta name="description" content="Beyond Rigid Bodies (BRB): Next-Generation Differentiable Simulation for Physical AI and Embodied Robotics. A SIGGRAPH Asia 2026 workshop in Kuala Lumpur." />
-<meta property="og:title" content="Beyond Rigid Bodies — SIGGRAPH Asia 2026 Workshop" />
-<meta property="og:description" content="Faithful, fast, differentiable, and deployable simulation beyond rigid-body dynamics — at the intersection of computer graphics and robotics." />
+<title>Beyond Rigid Bodies × Newton for Robotics — SIGGRAPH Asia 2026</title>
+<meta name="description" content="Beyond Rigid Bodies × Newton for Robotics: a full-day SIGGRAPH Asia 2026 workshop on open GPU physics, differentiable simulation, and robot learning. Explore the provisional 09:00–17:30 program in Kuala Lumpur (UTC+8)." />
+<meta property="og:title" content="Beyond Rigid Bodies × Newton for Robotics — SIGGRAPH Asia 2026" />
+<meta property="og:description" content="A full day of NVIDIA Warp demonstrations, BRB research clinics and group work, Newton solver validation, and Isaac Lab. Provisional schedule: 09:00–17:30, Kuala Lumpur (UTC+8); exact date pending." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="assets/teaser.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,9 +19,9 @@
 <!-- ── NAV ─────────────────────────────────────────── -->
 <header class="nav" id="top">
   <div class="wrap nav__inner">
-    <a class="brand" href="#top" aria-label="Beyond Rigid Bodies home">
+    <a class="brand" href="#top" aria-label="Beyond Rigid Bodies × Newton for Robotics home">
       <span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-      <span class="brand__txt"><strong>BRB</strong><em>Beyond&nbsp;Rigid&nbsp;Bodies</em></span>
+      <span class="brand__txt"><strong>BRB × Newton</strong><em>SIGGRAPH Asia 2026</em></span>
     </a>
     <nav class="nav__links" id="menu" aria-label="Primary">
       <a href="#overview">Overview</a>
@@ -42,14 +42,15 @@
 <!-- ── HERO ────────────────────────────────────────── -->
 <section class="hero">
   <div class="wrap hero__inner">
-    <p class="eyebrow eyebrow--light">SIGGRAPH Asia 2026 · Technical Workshop</p>
-    <h1 class="hero__title">Beyond Rigid Bodies</h1>
-    <p class="hero__sub">Next-Generation Differentiable Simulation for Physical AI and Embodied Robotics — faithful, fast, differentiable, and deployable physics beyond rigid-body dynamics, at the intersection of computer graphics and robotics.</p>
+    <p class="eyebrow eyebrow--light">SIGGRAPH Asia 2026 · Full-Day Discussion-focused Workshop</p>
+    <h1 class="hero__title">Beyond Rigid Bodies <span class="hero__partner">× Newton for Robotics</span></h1>
+    <p class="hero__sub">Open GPU Physics, Differentiable Simulation, and Multi-Solver Ecosystems for Physical AI and Embodied Robotics</p>
     <div class="spectrum spectrum--hero" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
     <ul class="meta" aria-label="Workshop facts">
-      <li><span class="meta__k">When</span> Dec 1–4, 2026 <span class="tbd">(exact day TBD)</span></li>
-      <li><span class="meta__k">Where</span> Kuala Lumpur, Malaysia</li>
-      <li><span class="meta__k">Format</span> Half day · ~3.5 hrs</li>
+      <li><span class="meta__k">Date</span> Dec 3 or 4, 2026 <span class="tbd">(final date pending)</span></li>
+      <li><span class="meta__k">Time · provisional</span> 09:00–17:30 · Kuala Lumpur (UTC+8)</li>
+      <li><span class="meta__k">Where</span> Kuala Lumpur, Malaysia <span class="tbd">(room TBA)</span></li>
+      <li><span class="meta__k">Format</span> Full day · Research, demos &amp; discussion</li>
     </ul>
     <div class="hero__cta">
       <a class="btn btn--solid" href="#schedule">View schedule</a>
@@ -71,7 +72,8 @@
     <p class="eyebrow">Overview</p>
     <h2 class="section__title">Simulation, beyond rigid bodies.</h2>
     <p class="lede">The intersection of computer graphics and robotics has seen immense progress, yet most scalable Embodied AI still relies on rigid-body dynamics. As robots increasingly interact with soft tissue, granular media, deformable objects, and high-precision frictional contact, there is a critical need for next-generation physical simulators that are simultaneously faithful, fast, differentiable, and deployable.</p>
-    <p class="body">Beyond Rigid Bodies (BRB) convenes researchers across computational mechanics, differentiable simulation, and robot learning. The program pairs invited keynote deep dives with extended, structured discussion and a closing panel, organized around four themes.</p>
+    <p class="body">Beyond Rigid Bodies × Newton for Robotics (BRBN) brings the BRB and NVIDIA/Newton teams together for one full-day program. An NVIDIA Warp introduction establishes a shared manipulation example. Four BRB research clinics and participant working groups turn research questions into modeling and validation requirements. Closing Newton and Isaac Lab sessions connect those requirements to solver choices and robot-learning evaluation.</p>
+    <p class="body overview__participation">Bring a research question, a work-in-progress case, or a negative result. Participants will develop a task-to-solver decision record, an evaluation checklist, and shared open questions. No installed software or participant GPU is required; alternative engines and critical comparisons are welcome.</p>
   </div>
 </section>
 
@@ -112,14 +114,15 @@
 <!-- ── SPEAKERS ────────────────────────────────────── -->
 <section class="band" id="speakers">
   <div class="wrap">
-    <p class="eyebrow">Keynote speakers</p>
-    <h2 class="section__title">Four invited deep dives</h2>
+    <p class="eyebrow">Invited &amp; presenting speakers</p>
+    <h2 class="section__title">Research clinics meet practical simulation</h2>
+    <p class="lede">Four confirmed invited speakers contribute to the BRB research clinics. Clinic assignments and individual times remain provisional; delivery arrangements for Srinath Sridhar and Yunzhu Li are pending.</p>
     <div class="grid grid--4 speakers">
 
       <article class="card person">
         <img class="person__img ph" data-kind="avatar" data-initials="TK" src="assets/Taku-Komura.png" alt="Taku Komura" />
         <div class="person__body">
-          <span class="tag tag--key">Keynote</span>
+          <span class="tag tag--key">Invited speaker</span>
           <h3 class="person__name">Taku Komura</h3>
           <p class="person__role">Professor · The University of Hong Kong</p>
           <p class="person__tags">character animation · physics-based simulation · contact solvers</p>
@@ -130,7 +133,7 @@
       <article class="card person">
         <img class="person__img ph" data-kind="avatar" data-initials="TD" src="assets/Tao-Du.png" alt="Tao Du" />
         <div class="person__body">
-          <span class="tag tag--key">Keynote</span>
+          <span class="tag tag--key">Invited speaker</span>
           <h3 class="person__name">Tao Du</h3>
           <p class="person__role">Assistant Professor · Tsinghua University (IIIS)</p>
           <p class="person__tags">differentiable simulation · soft robots · inverse design</p>
@@ -141,7 +144,7 @@
       <article class="card person">
         <img class="person__img ph" data-kind="avatar" data-initials="YL" src="assets/Yunzhu-Li.png" alt="Yunzhu Li" />
         <div class="person__body">
-          <span class="tag tag--key">Keynote</span>
+          <span class="tag tag--key">Invited speaker</span>
           <h3 class="person__name">Yunzhu Li</h3>
           <p class="person__role">Assistant Professor · Columbia University (RoboPIL)</p>
           <p class="person__tags">world models · deformable manipulation · Real2Sim</p>
@@ -152,7 +155,7 @@
       <article class="card person">
         <img class="person__img ph" data-kind="avatar" data-initials="SS" src="assets/Srinath-Sridhar.png" alt="Srinath Sridhar" />
         <div class="person__body">
-          <span class="tag tag--key">Keynote</span>
+          <span class="tag tag--key">Invited speaker</span>
           <h3 class="person__name">Srinath Sridhar</h3>
           <p class="person__role">Assistant Professor · Brown University (IVL)</p>
           <p class="person__tags">3D/4D vision · hand–object · dynamic neural fields</p>
@@ -164,21 +167,69 @@
   </div>
 </section>
 
+<!-- ── NVIDIA / NEWTON TEAM ────────────────────────── -->
+<section class="band band--mist" id="nvidia-team">
+  <div class="wrap">
+    <p class="eyebrow">NVIDIA / Newton presenting team</p>
+    <h2 class="section__title">From GPU physics to robot learning</h2>
+    <p class="lede">Johnny Nunez Cano, Asier Arranz, and Lu Shi form the core team for the NVIDIA Warp, Newton, and Isaac Lab sessions. Individual presentation and facilitation assignments will be finalized jointly.</p>
+    <div class="grid grid--3 presenting-team">
+      <article class="card person" id="johnny-nunez-cano">
+        <div class="person__body">
+          <span class="tag">Presenting organizer</span>
+          <h3 class="person__name">Johnny Nunez Cano</h3>
+          <p class="person__role">AI Developer Advocate · NVIDIA</p>
+          <p class="person__bio">Builds and teaches workflows spanning simulation, robot learning, and physical AI. Coordinates the shared narrative and the handoff from BRB research requirements to Newton and Isaac Lab.</p>
+        </div>
+      </article>
+      <article class="card person" id="asier-arranz">
+        <div class="person__body">
+          <span class="tag">Presenting organizer</span>
+          <h3 class="person__name">Asier Arranz</h3>
+          <p class="person__role">Senior Staff Developer Advocate · NVIDIA</p>
+          <p class="person__bio">Develops live demonstrations and workshops in robotics, simulation, and edge computing. Supports the NVIDIA Warp introduction, practical demonstrations, and audience exercises.</p>
+        </div>
+      </article>
+      <article class="card person" id="lu-shi">
+        <div class="person__body">
+          <span class="tag">Speaker</span>
+          <h3 class="person__name">Lu Shi</h3>
+          <p class="person__role">Physical AI Developer Relations · NVIDIA</p>
+          <p class="person__bio">Connects research and developer communities with GPU-accelerated simulation and robot learning, including NVIDIA Warp, Newton, Isaac Sim, and Isaac Lab.</p>
+        </div>
+      </article>
+    </div>
+    <p class="team__status"><strong>Tentative, unconfirmed:</strong> Mohammad Mohajerani and Spencer Huang (NVIDIA). Any contribution would be coordinated within the existing NVIDIA sessions after confirmation.</p>
+  </div>
+</section>
+
 <!-- ── SCHEDULE ────────────────────────────────────── -->
 <section class="band band--mist" id="schedule">
   <div class="wrap">
-    <p class="eyebrow">Schedule</p>
-    <h2 class="section__title">Half day · ~3.5 hours</h2>
-    <p class="note">Keynotes run ~35 minutes including discussion. Exact date, room, and start time will be confirmed by SIGGRAPH Asia 2026.</p>
-    <ol class="timeline">
-      <li><span class="t">0:00–0:15</span><div><h3>Opening Remarks</h3><p>Organizers</p></div></li>
-      <li style="--accent:var(--pa)"><span class="t">0:15–0:50</span><div><h3>Keynote 1</h3><p>Taku Komura <span class="loc"></span></p></div></li>
-      <li style="--accent:var(--pb)"><span class="t">0:50–1:25</span><div><h3>Keynote 2</h3><p>Tao Du <span class="loc"></span></p></div></li>
-      <li class="brk"><span class="t">1:25–1:40</span><div><h3>Coffee Break</h3><p>All attendees</p></div></li>
-      <li style="--accent:var(--pc)"><span class="t">1:40–2:15</span><div><h3>Keynote 3</h3><p>Srinath Sridhar <span class="loc"></span></p></div></li>
-      <li style="--accent:var(--pd)"><span class="t">2:15–2:50</span><div><h3>Keynote 4</h3><p>Yunzhu Li <span class="loc"></span></p></div></li>
-      <li class="panel"><span class="t">2:50–3:30</span><div><h3>Panel &amp; Open Discussion</h3><p>All speakers + organizers — open problems, benchmarks, practical barriers, and collaboration</p></div></li>
+    <p class="eyebrow">Provisional schedule · Updated September 23, 2026</p>
+    <h2 class="section__title">One full day · 09:00–17:30</h2>
+    <div class="schedule__status" id="schedule-status">
+      <p><strong>All times are local to Kuala Lumpur (UTC+8).</strong> The full-day format is confirmed. December 3 or 4, 2026 is under consideration; the final date, room, session times, and speaker delivery arrangements remain subject to organizer and workshop-chair confirmation.</p>
+      <p>The proposed day includes seven hours of programmed activity, one hour for lunch, and two 15-minute breaks. Research clinic labels below describe proposed themes, rather than finalized talk titles.</p>
+    </div>
+    <ol class="timeline" aria-label="Provisional full-day program" aria-describedby="schedule-status">
+      <li><span class="t">09:00–09:10</span><div><h3>Joint welcome &amp; audience poll</h3><p>Organizing teams · Introduce the shared manipulation brief and record questions to revisit at the close.</p></div></li>
+      <li><span class="t">09:10–10:00</span><div><h3>NVIDIA Warp introduction &amp; interactive demonstration</h3><p>NVIDIA team · Predict a parameter change, inspect the result, and document the baseline’s limits.</p></div></li>
+      <li class="brk"><span class="t">10:00–10:15</span><div><h3>Break</h3><p>Informal questions and case collection.</p></div></li>
+      <li style="--accent:var(--pc)"><span class="t">10:15–10:45</span><div><h3>BRB research clinic: reconstruction &amp; digital twins</h3><p>Proposed contribution: Srinath Sridhar · Identify observations, unknown parameters, and a calibration check.</p></div></li>
+      <li style="--accent:var(--pd)"><span class="t">10:45–11:15</span><div><h3>BRB research clinic: structured world models</h3><p>Proposed contribution: Yunzhu Li · Define a useful prediction and a test of generalization.</p></div></li>
+      <li style="--accent:var(--pa)"><span class="t">11:15–11:45</span><div><h3>BRB research clinic: contact-rich simulation &amp; control</h3><p>Proposed contribution: Taku Komura · Identify a missing physical effect and a diagnostic scene.</p></div></li>
+      <li style="--accent:var(--pb)"><span class="t">11:45–12:15</span><div><h3>BRB research clinic: differentiable simulation &amp; design</h3><p>Proposed contribution: Tao Du · Examine gradient assumptions and specify a check or alternative.</p></div></li>
+      <li class="panel"><span class="t">12:15–12:30</span><div><h3>Cross-clinic discussion</h3><p>BRB moderation and available invited speakers · Consolidate questions for group case work and capture morning guest input.</p></div></li>
+      <li class="brk"><span class="t">12:30–13:30</span><div><h3>Lunch</h3><p>Informal exchange.</p></div></li>
+      <li><span class="t">13:30–14:30</span><div><h3>BRB facilitated workshop: participant cases &amp; working groups</h3><p>BRB team · A 10-minute case lightning round, 40-minute group exercise across the four themes, and 10-minute preparation of evidence and proposed tests.</p></div></li>
+      <li class="panel"><span class="t">14:30–15:00</span><div><h3>Group report-back &amp; joint technical discussion</h3><p>BRB moderation with the NVIDIA team · Four 5-minute theme reports and 10-minute prioritization; carry requirements into the Newton session.</p></div></li>
+      <li class="brk"><span class="t">15:00–15:15</span><div><h3>Break</h3><p>Transition to practical examples.</p></div></li>
+      <li><span class="t">15:15–16:15</span><div><h3>Newton: solver choices &amp; validation</h3><p>NVIDIA team · Map requirements, explore a guided example, and critique solver choices to produce a decision record.</p></div></li>
+      <li><span class="t">16:15–17:15</span><div><h3>Isaac Lab: from simulation to robot learning</h3><p>NVIDIA team · Walk through a task, examine a policy rollout and perturbation, and develop an evaluation checklist.</p></div></li>
+      <li class="panel"><span class="t">17:15–17:30</span><div><h3>Joint synthesis &amp; community follow-up</h3><p>Organizing teams and participants · Revisit initial questions, finalize checks and open problems, and identify volunteer follow-up owners.</p></div></li>
     </ol>
+    <p class="schedule__detail">Each proposed 30-minute research clinic combines 15 minutes of technical input, 10 minutes of participant work or discussion, and 5 minutes of synthesis.</p>
   </div>
 </section>
 
@@ -186,7 +237,7 @@
 <section class="band" id="organizers">
   <div class="wrap">
     <p class="eyebrow">Organizers</p>
-    <h2 class="section__title">The organizing team</h2>
+    <h2 class="section__title">The BRB organizing team</h2>
     <p class="lede lede--tight">Connecting graphics simulation, computational mechanics, 3D vision, robotics, and physical AI across academia and industry.</p>
     <div class="grid grid--4 orgs">
       <article class="card person">
@@ -200,7 +251,7 @@
         <img class="person__img ph" data-kind="avatar" data-initials="ZZ" src="assets/Ziqiu-Zeng.png" alt="Ziqiu Zeng" />
         <div class="person__body">
           <h3 class="person__name">Ziqiu Zeng</h3>
-          <p class="person__role">Research Fellow · National University of Singapore</p>
+          <p class="person__role">Research Manager · National University of Singapore</p>
         </div>
       </article>
       <article class="card person">
@@ -272,7 +323,7 @@
   <div class="wrap cta__inner">
     <div class="spectrum" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
     <h2>Bring physics into the loop.</h2>
-    <p>Join us at SIGGRAPH Asia 2026 in Kuala Lumpur (Dec 1–4, 2026) for four keynote deep dives and an extended panel on faithful, fast, differentiable, and deployable simulation.</p>
+    <p>Join us at SIGGRAPH Asia 2026 in Kuala Lumpur for a full day of GPU physics, BRB research clinics, collaborative case work, and Newton and Isaac Lab demonstrations. The workshop is proposed for December 3 or 4, 2026; the final date and room will be announced here.</p>
     <div class="cta__row">
       <a class="btn btn--solid" href="mailto:akinesia112@gmail.com">Contact organizers</a>
       <a class="btn btn--ghost btn--onDark" href="#overview">Read the overview</a>
@@ -285,7 +336,7 @@
 
 <footer class="foot">
   <div class="wrap foot__inner">
-    <p><strong>Beyond Rigid Bodies (BRB)</strong> · SIGGRAPH Asia 2026 Workshop · Kuala Lumpur</p>
+    <p><strong>Beyond Rigid Bodies × Newton for Robotics (BRBN)</strong> · SIGGRAPH Asia 2026 · Kuala Lumpur</p>
     <p class="foot__url">beyondrigidbodies.github.io</p>
   </div>
 </footer>
