@@ -20,16 +20,17 @@ Newton proposals are historical references, not the current schedule.
   activity, one hour for lunch, and two 15-minute breaks.
 - Individual slots, clinic themes, the room, and speaker delivery arrangements
   remain subject to joint organizer and workshop-chair confirmation.
-- Mohammad Mohajerani and Spencer Huang are tentative, unconfirmed speakers.
+- Mohammad Mohajerani and Spencer Huang are confirmed speakers, as listed in the
+  SIGGRAPH Asia 2026 conference schedule.
 
 The five NVIDIA portraits supplied by the organizers in `SIGGRAPHーASIA/figures/`
 are included in both Speakers and the combined BRB × Newton organizing team.
 Their original image files are preserved in `assets/` with URL-friendly names.
-The two unconfirmed participants retain their pending status in both sections.
+Mohammad Mohajerani and Spencer Huang appear as speakers in both sections.
 Speaker and organizer descriptions concisely summarize the corresponding
 biographies in `main.tex`. Organizer titles also follow that file;
-the NVIDIA team distinguishes the two named organizers, Lu Shi's speaker role,
-and the two tentative speakers.
+the NVIDIA team distinguishes the two named organizers from the three speakers
+(Lu Shi, Mohammad Mohajerani, and Spencer Huang).
 The supplied `newton-figure-1.png` and `newton-figure-2.png` appear in the overview
 and schedule, with captions drawn from the merged program in `main.tex`. They
 can be opened at full size. The discussion diagram illustrates participation
