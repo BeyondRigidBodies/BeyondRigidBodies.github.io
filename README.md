@@ -36,21 +36,29 @@ Speaker and organizer descriptions concisely summarize the corresponding
 biographies in `main.tex`. Organizer titles also follow that file;
 the NVIDIA team distinguishes the two named organizers from Lu Shi's speaker role.
 The supplied `newton-figure-1.png` and `newton-figure-2.png` appear in the overview
-and schedule, with captions drawn from the merged program in `main.tex`. They
-can be opened at full size. The discussion diagram illustrates participation
+and schedule, with captions drawn from the merged program in `main.tex`; clicking
+a diagram opens the original image. The discussion diagram illustrates participation
 activities; the provisional timetable remains the source for session order.
 
 ## Presentation
 
-The two workshop names share one title size and weight. Section headings share
+The two workshop names and the subtitle (“Open GPU Physics, Differentiable
+Simulation, and Multi-Solver Ecosystems…”) share one title size and weight.
+The schedule lists the four research clinics by theme and speaker; a note
+below the timetable explains the 10:15–12:15 clinic block.
+
+Keep the page text short and say each fact once: the date, time, and room
+appear in the hero and the schedule heading only, and figure captions do not
+repeat the overview or timetable. Section headings share
 one responsive size; profile and program headings share a smaller size. The
 layout uses system sans-serif fonts, a white background, thin rules, and restrained
 blue accents. Speakers and organizers each appear in one horizontal carousel.
-All profiles share a card width and height, with a portrait, role, confirmation
-status, and one short description. Touch swipes, arrow buttons, and keyboard
+All profiles share a card width and height, with a portrait, name, affiliation,
+and one short description; cards carry no role label, since the section heading
+already says Speakers or Organizers. Touch swipes, arrow buttons, and keyboard
 left/right navigation are supported, including reduced-motion preferences.
-Both Newton diagrams retain their original files and aspect ratios, with full-size
-links and inline automatic height to prevent older cached styles from stretching
+Both Newton diagrams retain their original files and aspect ratios, with image links
+and inline automatic height to prevent older cached styles from stretching
 them. The stylesheet URL is versioned for the presentation update.
 
 When a new program is confirmed, update the hero facts, schedule, speaker status,
