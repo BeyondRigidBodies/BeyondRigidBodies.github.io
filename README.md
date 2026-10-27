@@ -15,22 +15,26 @@ Schedule,” and “Invited and Presenting Speakers.” The original separate BR
 Newton proposals are historical references, not the current schedule.
 
 - The full-day format is confirmed.
-- December 3 or 4, 2026 is under consideration; the final date is pending.
-- 09:00–17:30 Kuala Lumpur time (UTC+8) is provisional: seven hours of programmed
-  activity, one hour for lunch, and two 15-minute breaks.
-- Individual slots, clinic themes, the room, and speaker delivery arrangements
-  remain subject to joint organizer and workshop-chair confirmation.
+- The SIGGRAPH Asia 2026 conference schedule sets the workshop for Thursday,
+  December 3, 2026, 09:00–17:00 Kuala Lumpur time (GMT+8), in MR 401/402,
+  Level 4. The day has six and a half hours of programmed activity, one hour for
+  lunch, and two 15-minute breaks.
+- To fit the 17:00 end, the October 28, 2026 update shortened the Newton and
+  Isaac Lab sessions to 45 minutes each; the joint synthesis runs 16:45–17:00.
+- Individual slots, clinic themes, and speaker delivery arrangements remain
+  subject to organizer confirmation.
 - Mohammad Mohajerani and Spencer Huang are confirmed speakers, as listed in the
   SIGGRAPH Asia 2026 conference schedule.
 
 The five NVIDIA portraits supplied by the organizers in `SIGGRAPHーASIA/figures/`
-are included in both Speakers and the combined BRB × Newton organizing team.
+are included in Speakers. Johnny Nunez Cano, Asier Arranz, and Lu Shi also appear
+in the combined BRB × Newton organizing team.
 Their original image files are preserved in `assets/` with URL-friendly names.
-Mohammad Mohajerani and Spencer Huang appear as speakers in both sections.
+Mohammad Mohajerani and Spencer Huang appear only in Speakers, not in the
+organizing team.
 Speaker and organizer descriptions concisely summarize the corresponding
 biographies in `main.tex`. Organizer titles also follow that file;
-the NVIDIA team distinguishes the two named organizers from the three speakers
-(Lu Shi, Mohammad Mohajerani, and Spencer Huang).
+the NVIDIA team distinguishes the two named organizers from Lu Shi's speaker role.
 The supplied `newton-figure-1.png` and `newton-figure-2.png` appear in the overview
 and schedule, with captions drawn from the merged program in `main.tex`. They
 can be opened at full size. The discussion diagram illustrates participation
