@@ -21,8 +21,8 @@ Newton proposals are historical references, not the current schedule.
   lunch, and two 15-minute breaks.
 - To fit the 17:00 end, the October 28, 2026 update shortened the Newton and
   Isaac Lab sessions to 45 minutes each; the joint synthesis runs 16:45–17:00.
-- Individual slots, clinic themes, and speaker delivery arrangements remain
-  subject to organizer confirmation.
+- Individual slots and clinic themes remain subject to organizer confirmation.
+- Srinath Sridhar and Yunzhu Li are confirmed; their delivery is no longer pending.
 - Mohammad Mohajerani and Spencer Huang are confirmed speakers, as listed in the
   SIGGRAPH Asia 2026 conference schedule.
 
