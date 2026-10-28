@@ -17,8 +17,7 @@ Newton proposals are historical references, not the current schedule.
 - The full-day format is confirmed.
 - The SIGGRAPH Asia 2026 conference schedule sets the workshop for Thursday,
   December 3, 2026, 09:00–17:00 Kuala Lumpur time (GMT+8), in MR 401/402,
-  Level 4. The day has six and a half hours of programmed activity, one hour for
-  lunch, and two 15-minute breaks.
+  Level 4.
 - Speaker slots: NVIDIA Warp 09:10–10:00, Newton 14:35–15:35, Isaac Lab
   15:45–16:45 (one hour each since October 28, 2026), and the clinics of
   Srinath Sridhar 10:15–10:45, Yunzhu Li 10:45–11:15, Tao Du 11:45–12:15, and
