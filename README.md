@@ -19,15 +19,14 @@ Newton proposals are historical references, not the current schedule.
   December 3, 2026, 09:00–17:00 Kuala Lumpur time (GMT+8), in MR 401/402,
   Level 4. The day has six and a half hours of programmed activity, one hour for
   lunch, and two 15-minute breaks.
-- To fit the 17:00 end, the October 28, 2026 update shortened the Newton and
-  Isaac Lab sessions to 45 minutes each; the joint synthesis runs 16:45–17:00.
-- Speaker slots are fixed: NVIDIA Warp 09:10–10:00, Newton 15:15–16:00, Isaac
-  Lab 16:00–16:45, and the clinics of Srinath Sridhar 10:15–10:45, Yunzhu Li
-  10:45–11:15, Tao Du 11:45–12:15, and Taku Komura 13:30–14:00 (moved to the
-  afternoon at his request, October 28, 2026). Only non-speaker sessions may
-  move or shrink.
-- The case lightning round fills 11:15–11:45; the BRB working groups and
-  report-back share 14:00–15:00.
+- Speaker slots: NVIDIA Warp 09:10–10:00, Newton 14:35–15:35, Isaac Lab
+  15:45–16:45 (one hour each since October 28, 2026), and the clinics of
+  Srinath Sridhar 10:15–10:45, Yunzhu Li 10:45–11:15, Tao Du 11:45–12:15, and
+  Taku Komura 13:30–14:00 (afternoon at his request). Only non-speaker sessions
+  may move or shrink.
+- Breaks run 10:00–10:15, 11:15–11:30, and 15:35–15:45; lunch 12:30–13:30. The
+  case lightning round takes 11:30–11:45 and the BRB working groups and
+  report-back 14:00–14:35. The day ends with the joint synthesis at 16:45–17:00.
 - Individual slots and clinic themes remain subject to organizer confirmation.
 - Srinath Sridhar and Yunzhu Li are confirmed; their delivery is no longer pending.
 - Mohammad Mohajerani and Spencer Huang are confirmed speakers, as listed in the
