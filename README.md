@@ -21,11 +21,13 @@ Newton proposals are historical references, not the current schedule.
   lunch, and two 15-minute breaks.
 - To fit the 17:00 end, the October 28, 2026 update shortened the Newton and
   Isaac Lab sessions to 45 minutes each; the joint synthesis runs 16:45–17:00.
-- NVIDIA session times and lengths are fixed: Warp 09:10–10:00, Newton
-  15:15–16:00, Isaac Lab 16:00–16:45. Other sessions may move or shrink.
-- Taku Komura's clinic is at 13:30–14:00 at his request (October 28, 2026);
-  the case lightning round moved into the morning and the BRB working groups
-  and report-back share 14:00–15:00.
+- Speaker slots are fixed: NVIDIA Warp 09:10–10:00, Newton 15:15–16:00, Isaac
+  Lab 16:00–16:45, and the clinics of Srinath Sridhar 10:15–10:45, Yunzhu Li
+  10:45–11:15, Tao Du 11:45–12:15, and Taku Komura 13:30–14:00 (moved to the
+  afternoon at his request, October 28, 2026). Only non-speaker sessions may
+  move or shrink.
+- The case lightning round fills 11:15–11:45; the BRB working groups and
+  report-back share 14:00–15:00.
 - Individual slots and clinic themes remain subject to organizer confirmation.
 - Srinath Sridhar and Yunzhu Li are confirmed; their delivery is no longer pending.
 - Mohammad Mohajerani and Spencer Huang are confirmed speakers, as listed in the
