@@ -23,7 +23,8 @@ Newton proposals are historical references, not the current schedule.
   Srinath Sridhar 10:15–10:45, Yunzhu Li 10:45–11:15, Tao Du 11:45–12:15, and
   Taku Komura 13:30–14:00 (afternoon at his request). Only non-speaker sessions
   may move or shrink.
-- Breaks run 10:00–10:15, 11:15–11:30, and 15:35–15:45; lunch 12:30–13:30. The
+- Breaks run 10:00–10:15, 11:15–11:30, and 15:35–15:45; lunch 12:15–13:30
+  (the cross-clinic discussion was dropped on November 5, 2026). The
   case lightning round takes 11:30–11:45. Since November 5, 2026, 14:00–14:35
   holds the talk “Newton-based deformable simulation in practice and
   Newton-conditioned world models” (no separate Q&A), replacing the BRB working
