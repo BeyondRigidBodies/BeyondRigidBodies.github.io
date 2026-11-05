@@ -24,8 +24,11 @@ Newton proposals are historical references, not the current schedule.
   Taku Komura 13:30–14:00 (afternoon at his request). Only non-speaker sessions
   may move or shrink.
 - Breaks run 10:00–10:15, 11:15–11:30, and 15:35–15:45; lunch 12:30–13:30. The
-  case lightning round takes 11:30–11:45 and the BRB working groups and
-  report-back 14:00–14:35. The day ends with the joint synthesis at 16:45–17:00.
+  case lightning round takes 11:30–11:45. Since November 5, 2026, 14:00–14:30
+  holds the talk “Newton-based deformable simulation in practice and
+  Newton-conditioned world models,” followed by Q&A 14:30–14:35, replacing the
+  BRB working groups and report-back. The day ends with the joint synthesis at
+  16:45–17:00.
 - Individual slots and clinic themes remain subject to organizer confirmation.
 - Srinath Sridhar and Yunzhu Li are confirmed; their delivery is no longer pending.
 - Mohammad Mohajerani and Spencer Huang are confirmed speakers, as listed in the
