@@ -28,7 +28,9 @@ Newton proposals are historical references, not the current schedule.
   case lightning round takes 11:30–11:45. Since November 5, 2026, 14:00–14:35
   holds the talk “Newton-based deformable simulation in practice and
   Newton-conditioned world models” (no separate Q&A), replacing the BRB working
-  groups and report-back. The day ends with the joint synthesis at
+  groups and report-back. Since November 20, 2026, Steven (Mode Maison Labs)
+  presents this talk; he appears in Speakers and Mode Maison Labs in
+  Institutions. The day ends with the joint synthesis at
   16:45–17:00.
 - Individual slots and clinic themes remain subject to organizer confirmation.
 - Srinath Sridhar and Yunzhu Li are confirmed; their delivery is no longer pending.
